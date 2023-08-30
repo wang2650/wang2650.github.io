@@ -16,7 +16,7 @@
     var videoObject = {
     container: '#video', //“#”代表容器的ID，“.”或“”代表容器的class
     variable: 'player', //播放函数名称，该属性必需设置，值等于下面的new ckplayer()的对象
-    video: 'https://upos-sz-mirror08c.bilivideo.com/upgcxcode/12/27/1096942712/1096942712-1-16.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1692948696&gen=playurlv2&os=08cbv&oi=17621919&trid=2e15e32b5f3e4166ad190c886f04ec5bh&mid=0&platform=html5&upsig=9eb320b95ed7be243d76b4c44098493c&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform&bvc=vod&nettype=0&f=h_0_0&bw=48608&logo=80000000'//视频地址
+    video: 'bailu.mp4'//视频地址
     };
     var player = new ckplayer(videoObject);
 </script> 
