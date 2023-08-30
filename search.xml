@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>aa</title>
+    <title>哔哩哔哩视频和网易云的使用</title>
     <url>/posts/2/</url>
-    <content><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>使用HTML、JavaScript、CSS与Canvas技术构建一个卫星运行轨道图，通过THREE.JS、OrbitControls.js、Detector.js等一些列Canvas 3D绘图框架实现了卫星运行轨道图的3D实现。</p>
+    <content><![CDATA[<h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>网易云的歌单，通过iframe的方式实现</p>
+<p>哔哩哔哩的视频通过引用js和css文件来实现。（不登录的情况下，画质比较低）</p>
 <!-- <video autoplay="autoplay" loop="loop" id="videojs1" class="video-js vjs-16-9" controls preload="auto"><source src="https://upos-sz-mirror08c.bilivideo.com/upgcxcode/12/27/1096942712/1096942712-1-16.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1692948696&gen=playurlv2&os=08cbv&oi=17621919&trid=2e15e32b5f3e4166ad190c886f04ec5bh&mid=0&platform=html5&upsig=9eb320b95ed7be243d76b4c44098493c&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform&bvc=vod&nettype=0&f=h_0_0&bw=48608&logo=80000000" type="video/mp4"></video><link href="/libs/videojs2/videojs.css" rel="stylesheet"/><script src="/libs/videojs2/video.min.js"></script><script src="/libs/videojs2/zh-CN.min.js"></script><script src="/libs/videojs2/videojs.hotkeys.min.js"></script><script>player1=videojs("videojs1",{language:"zh-CN",responsive:true,plugins:{hotkeys:{alwaysCaptureHotkeys:true},},});</script><link rel="stylesheet" href="/libs/videojs2/mytoast.css"/><script src="/libs/videojs2/mytoast.js"></script><script>toast_init(player1)</script><link rel="stylesheet"href="/libs/videojs2/videojs-mobile-ui.css"/><script src="/libs/videojs2/videojs-mobile-ui.min.js"></script><script>player1.mobileUi();</script><script src="/libs/videojs2/videojs-remember.min.js"></script><script>videojs(document.querySelector("video")).remember({"localStorageKey": "videojs.remember.myvideo"});</script> -->
 <!-- <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
 <iframe src="//player.bilibili.com/player.html?aid=442601182&bvid=BV11L411e7j8&cid=1096942712&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"   style="position:absolute; height: 100%; width: 100%;"> </iframe></div> -->
 
-<!-- <div id="video" style="width: 100%; height: 400px;max-width: 600px;"></div>
-
-
+<div id="video" style="width: 100%; height: 400px;max-width: 600px;"></div>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/p2p-ckplayer@latest/ckplayer/ckplayer.min.js" charset="UTF-8"></script>
 <script type="text/javascript">
    //定义一个变量：videoObject，用来做为视频初始化配置
@@ -20,9 +19,39 @@
     video: 'https://upos-sz-mirror08c.bilivideo.com/upgcxcode/12/27/1096942712/1096942712-1-16.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1692948696&gen=playurlv2&os=08cbv&oi=17621919&trid=2e15e32b5f3e4166ad190c886f04ec5bh&mid=0&platform=html5&upsig=9eb320b95ed7be243d76b4c44098493c&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform&bvc=vod&nettype=0&f=h_0_0&bw=48608&logo=80000000'//视频地址
     };
     var player = new ckplayer(videoObject);
-</script> -->
+</script> 
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=8376695998&auto=1&height=430"></iframe>
 ]]></content>
+  </entry>
+  <entry>
+    <title>hexo服务器创建和使用</title>
+    <url>/posts/3/</url>
+    <content><![CDATA[<h5 id="git的清理"><a href="#git的清理" class="headerlink" title="git的清理"></a>git的清理</h5><p>执行  git rm * -r（记得，cd 到你要删除的目录下。当然 * 可以换成指定目录）</p>
+<p>这时删除文件已经进入本地缓存区，<br>git add .<br>git commit -m “update”<br>git push origin branchName</p>
+<p>或者直接 git push</p>
+<h4 id="hexo的插件"><a href="#hexo的插件" class="headerlink" title="hexo的插件"></a>hexo的插件</h4><p>参考教程 <a href="https://hexo.io/zh-cn/docs/tag-plugins#%E7%A4%BA%E4%BE%8B-1">文章教程</a></p>
+<p>yarn   add          hexo-deployer-git<br>yarn add            hexo-abbrlink                        <a href="https://zhuanlan.zhihu.com/p/169492685">断链使用</a><br>yarn  add           hexo-spoiler                          模糊使用              
+  <span class="spoiler" onclick="this.classList.toggle('spoiler')">
+    <span class="spoiler-blur ">糊里糊涂</span>
+  </span><br>yarn  add           markdown-it-ruby                 <a href="https://loafing.cn/posts/hexo-tags.html#%E6%96%87%E5%AD%97%E4%B8%8A%E6%96%B9%E6%B3%A8%E9%87%8A-Ruby">上方注释使用yarn add            hexo-renderer-marked         </a><a href="https://github.com/hexojs/hexo-renderer-marked">文档</a><br>yarn add            hexo-generator-sitemap       <a href="https://www.dianjilingqu.com/249024.html">文档 </a><br>yarn add            hexo-lazyload-image            <a href="https://blog.csdn.net/qq_37402392/article/details/127029330">文档</a><br>yarn  add           hexo-generator-searchdb     <a href="https://www.jianshu.com/p/fa09b1b51dde">文档</a><br>yarn add            hexo-filter-nofollow<br>yarn add            hexo-submit-urls-to-search-engine         <a href="https://cjh0613.com/20200603HexoSubmitUrlsToSearchEngine#%E7%99%BE%E5%BA%A6">文档</a><br>yarn  add           hexo-blog-encrypt               <a href="https://cloud.tencent.com/developer/article/1917942">文档</a><br>yarn add            hexo-tag-qrcode                  <a href="https://blog.jijian.link/2020-01-25/hexo-qrcode/">文档</a><br>yarn add             hexo-neat                         	<a href="https://loafing.cn/posts/hexo-tags.html#%E4%BB%A3%E7%A0%81%E5%8E%8B%E7%BC%A9">文档 </a></p>
+<p><a href="https://loafing.cn/posts/hexo-tags.html#%E4%BB%A3%E7%A0%81%E5%8E%8B%E7%BC%A9">yarn add imagemin-jpegtran imagemin-svgo imagemin-gifsicle imagemin-optipng –dev
+</a><a href="%5Bhttps://hexo.io/zh-cn/docs/asset-folders%5D(https://loafing.cn/posts/hexo-tags.html#%E4%BB%A3%E7%A0%81%E5%8E%8B%E7%BC%A9)">教程</a><a href="%5Bhttps://hexo.io/zh-cn/docs/tag-plugins#iframe%5D(https://loafing.cn/posts/hexo-tags.html#%E4%BB%A3%E7%A0%81%E5%8E%8B%E7%BC%A9)">教程2</a></p>
+<h4 id="tips"><a href="#tips" class="headerlink" title="tips"></a>tips</h4><p>相对路径引用的标签插件<br>通过常规的 markdown 语法和相对路径来引用图片和其它资源可能会导致它们在存档页或者主页上显示不正确。在Hexo 2时代，社区创建了很多插件来解决这个问题。但是，随着Hexo 3 的发布，许多新的标签插件被加入到了核心代码中。这使得你可以更简单地在文章中引用你的资源。</p>
+
+
+
+<p>比如说：当你打开文章资源文件夹功能后，你把一个 example.jpg 图片放在了你的资源文件夹中，如果通过使用相对路径的常规 markdown 语法 <img src="/example.jpg"> ，它将 不会 出现在首页上。（但是它会在文章中按你期待的方式工作）</p>
+<p>正确的引用图片方式是使用下列的标签插件而不是 markdown ：</p>
+
+<p>通过这种方式，图片将会同时出现在文章和主页以及归档页中。</p>
+]]></content>
+      <categories>
+        <category>other</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>服务器</tag>
+      </tags>
   </entry>
 </search>
