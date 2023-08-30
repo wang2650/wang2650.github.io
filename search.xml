@@ -3,26 +3,26 @@
   <entry>
     <title>哔哩哔哩视频和网易云的使用</title>
     <url>/posts/2/</url>
-    <content><![CDATA[<h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>网易云的歌单，通过iframe的方式实现</p>
-<p>哔哩哔哩的视频通过引用js和css文件来实现。（不登录的情况下，画质比较低）</p>
-<!-- <video autoplay="autoplay" loop="loop" id="videojs1" class="video-js vjs-16-9" controls preload="auto"><source src="https://upos-sz-mirror08c.bilivideo.com/upgcxcode/12/27/1096942712/1096942712-1-16.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1692948696&gen=playurlv2&os=08cbv&oi=17621919&trid=2e15e32b5f3e4166ad190c886f04ec5bh&mid=0&platform=html5&upsig=9eb320b95ed7be243d76b4c44098493c&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform&bvc=vod&nettype=0&f=h_0_0&bw=48608&logo=80000000" type="video/mp4"></video><link href="/libs/videojs2/videojs.css" rel="stylesheet"/><script src="/libs/videojs2/video.min.js"></script><script src="/libs/videojs2/zh-CN.min.js"></script><script src="/libs/videojs2/videojs.hotkeys.min.js"></script><script>player1=videojs("videojs1",{language:"zh-CN",responsive:true,plugins:{hotkeys:{alwaysCaptureHotkeys:true},},});</script><link rel="stylesheet" href="/libs/videojs2/mytoast.css"/><script src="/libs/videojs2/mytoast.js"></script><script>toast_init(player1)</script><link rel="stylesheet"href="/libs/videojs2/videojs-mobile-ui.css"/><script src="/libs/videojs2/videojs-mobile-ui.min.js"></script><script>player1.mobileUi();</script><script src="/libs/videojs2/videojs-remember.min.js"></script><script>videojs(document.querySelector("video")).remember({"localStorageKey": "videojs.remember.myvideo"});</script> -->
+    <content><![CDATA[<h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><h5 id="网易云的歌单，通过iframe的方式实现"><a href="#网易云的歌单，通过iframe的方式实现" class="headerlink" title="网易云的歌单，通过iframe的方式实现"></a>网易云的歌单，通过iframe的方式实现</h5><h5 id="哔哩哔哩的视频通过引用js和css文件来实现。（不登录的情况下，画质比较低）"><a href="#哔哩哔哩的视频通过引用js和css文件来实现。（不登录的情况下，画质比较低）" class="headerlink" title="哔哩哔哩的视频通过引用js和css文件来实现。（不登录的情况下，画质比较低）"></a>哔哩哔哩的视频通过引用js和css文件来实现。（不登录的情况下，画质比较低）</h5><!-- <video autoplay="autoplay" loop="loop" id="videojs1" class="video-js vjs-16-9" controls preload="auto"><source src="https://upos-sz-mirror08c.bilivideo.com/upgcxcode/12/27/1096942712/1096942712-1-16.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1692948696&gen=playurlv2&os=08cbv&oi=17621919&trid=2e15e32b5f3e4166ad190c886f04ec5bh&mid=0&platform=html5&upsig=9eb320b95ed7be243d76b4c44098493c&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform&bvc=vod&nettype=0&f=h_0_0&bw=48608&logo=80000000" type="video/mp4"></video><link href="/libs/videojs2/videojs.css" rel="stylesheet"/><script src="/libs/videojs2/video.min.js"></script><script src="/libs/videojs2/zh-CN.min.js"></script><script src="/libs/videojs2/videojs.hotkeys.min.js"></script><script>player1=videojs("videojs1",{language:"zh-CN",responsive:true,plugins:{hotkeys:{alwaysCaptureHotkeys:true},},});</script><link rel="stylesheet" href="/libs/videojs2/mytoast.css"/><script src="/libs/videojs2/mytoast.js"></script><script>toast_init(player1)</script><link rel="stylesheet"href="/libs/videojs2/videojs-mobile-ui.css"/><script src="/libs/videojs2/videojs-mobile-ui.min.js"></script><script>player1.mobileUi();</script><script src="/libs/videojs2/videojs-remember.min.js"></script><script>videojs(document.querySelector("video")).remember({"localStorageKey": "videojs.remember.myvideo"});</script> -->
 <!-- <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
 <iframe src="//player.bilibili.com/player.html?aid=442601182&bvid=BV11L411e7j8&cid=1096942712&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"   style="position:absolute; height: 100%; width: 100%;"> </iframe></div> -->
 
 <div id="video" style="width: 100%; height: 400px;max-width: 600px;"></div>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/p2p-ckplayer@latest/ckplayer/ckplayer.min.js" charset="UTF-8"></script>
 <script type="text/javascript">
-   //定义一个变量：videoObject，用来做为视频初始化配置
     var videoObject = {
     container: '#video', //“#”代表容器的ID，“.”或“”代表容器的class
     variable: 'player', //播放函数名称，该属性必需设置，值等于下面的new ckplayer()的对象
-    video: 'bailu.mp4'//视频地址
+    video: 'https://wang2650.github.io/posts/2/bailu.mp4'//视频地址
     };
     var player = new ckplayer(videoObject);
 </script> 
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=8376695998&auto=1&height=430"></iframe>
 ]]></content>
+      <tags>
+        <tag>影音</tag>
+      </tags>
   </entry>
   <entry>
     <title>hexo服务器创建和使用</title>
@@ -39,19 +39,11 @@
 <p><a href="%5Bhttps://hexo.io/zh-cn/docs/asset-folders%5D(https://loafing.cn/posts/hexo-tags.html#%E4%BB%A3%E7%A0%81%E5%8E%8B%E7%BC%A9)">教程</a></p>
 <p><a href="%5Bhttps://hexo.io/zh-cn/docs/tag-plugins#iframe%5D(https://loafing.cn/posts/hexo-tags.html#%E4%BB%A3%E7%A0%81%E5%8E%8B%E7%BC%A9)">教程2</a></p>
 <h4 id="tips"><a href="#tips" class="headerlink" title="tips"></a>tips</h4><p>相对路径引用的标签插件<br>通过常规的 markdown 语法和相对路径来引用图片和其它资源可能会导致它们在存档页或者主页上显示不正确。在Hexo 2时代，社区创建了很多插件来解决这个问题。但是，随着Hexo 3 的发布，许多新的标签插件被加入到了核心代码中。这使得你可以更简单地在文章中引用你的资源。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-
-
+<p>{  % asset_path slug %   }<br>{  % asset_img slug [title] %  }<br>{  % asset_link slug [title]  %  }</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">比如说：当你打开文章资源文件夹功能后，你把一个 example.jpg 图片放在了你的资源文件夹中，如果通过使用相对路径的常规 markdown 语法 ![img](example.jpg) ，它将 不会 出现在首页上。（但是它会在文章中按你期待的方式工作）</span><br></pre></td></tr></table></figure>
 
 <p>正确的引用图片方式是使用下列的标签插件而不是 markdown ：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
+<p>{  %  asset_img example.jpg This is an example image %  }</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">通过这种方式，图片将会同时出现在文章和主页以及归档页中。</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
