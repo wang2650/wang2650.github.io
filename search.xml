@@ -54,4 +54,16 @@
         <tag>服务器</tag>
       </tags>
   </entry>
+  <entry>
+    <title>docker的部署</title>
+    <url>/posts/4/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>docker</category>
+      </categories>
+      <tags>
+        <tag>容器</tag>
+        <tag>docker</tag>
+      </tags>
+  </entry>
 </search>
